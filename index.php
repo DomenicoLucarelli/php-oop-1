@@ -10,7 +10,7 @@
         public $colore = 'si';
 
         // definisco un costruttore
-        function __construct(string $_titolo, int $_durata, string $_genere, int $_anno){
+        function __construct(string $_titolo, int $_durata, array $_genere, int $_anno){
 
             $this->titolo = $_titolo;
             $this->durata = $_durata;
@@ -27,9 +27,9 @@
 
     
     // istanzio oggetti
-    $Gladiatore = new Movie("Il Gladiatore",155,"Storico",2000);
-    $LaRonde = new Movie("La Ronde", 97, "Commedia", 1950);
-    $Troy = new Movie("Troy", 162, "Azione", 2004);
+    $Gladiatore = new Movie("Il Gladiatore",155,["Storico","Azione"],2000);
+    $LaRonde = new Movie("La Ronde", 97, ["Commedia"], 1950);
+    $Troy = new Movie("Troy", 162, ["Azione","Epico","Storico"], 2004);
 
     var_dump($Gladiatore);
     var_dump($LaRonde);
